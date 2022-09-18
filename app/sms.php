@@ -73,7 +73,7 @@
 						echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 					}
 				?>
-				<h2>List Of Usres</h2>  <button style="background: dodgerblue; margin: 4px; outline: none; border-radius: 5px; padding-right: 8px; padding-left: 8px;">Print</button>
+				<h2>List Of Usres</h2>  <button style="background: dodgerblue; margin: 4px; outline: none; border-radius: 5px; padding-right: 8px; padding-left: 8px;" onclick="printPage();">Print</button>
 				<div class="table-responsive text-center">
 					<form action="" method="post">
 						<table class="table table-bordered">
@@ -111,10 +111,26 @@
 					</form>
 				</div>
 
+				<script type="text/javascript">
+ function printPage(){
+        var tableData = '<table border="1">'+document.getElementsByTagName("table")[0].innerHTML+'</table>';
+        var data = '<button onclick="window.print()">Print this page</button>'+tableData;       
+        myWindow=window.open('','','');
+        myWindow.innerWidth = screen.width;
+        myWindow.innerHeight = screen.height;
+        myWindow.screenX = 0;
+        myWindow.screenY = 0;
+        myWindow.document.write(data);
+        myWindow.focus();
+       
+    };
+ </script>
 
-					<h2>List Of Rooms</h2> <button style="background: dodgerblue; margin: 4px; outline: none; border-radius: 5px; padding-right: 8px; padding-left: 8px;" onclick="printPage();">Print</button>
+
+					<h2>List Of Rooms</h2> <button style="background: dodgerblue; margin: 4px; outline: none; border-radius: 5px; padding-right: 8px; padding-left: 8px;" onclick="printPage2();">Print</button>
 				<div class="table-responsive text-center">
 					<form action="" method="post">
+						<span>
 						<table class="table table-bordered" id="tblrooms">
 						  <thead>
 						    <tr>
@@ -151,6 +167,7 @@
 						  	?>
 						  </tbody>
 						</table>
+					</span>
 						<br>
 						
 					</form>
@@ -176,23 +193,17 @@
 	
 	
 </script>
-
 <script type="text/javascript">
- function printPage(){
-        var tableData = '<table border="1">'+document.getElementsByTagName("table")[0].innerHTML+'</table>';
+ function printPage2(){
+        var tableData = '<table border="1">'+document.getElementsByTagName("span")[0].innerHTML+'</table>';
         var data = '<button onclick="window.print()">Print this page</button>'+tableData;       
-        myWindow=window.open('','','width=800,height=600');
+        myWindow=window.open('','','');
         myWindow.innerWidth = screen.width;
         myWindow.innerHeight = screen.height;
         myWindow.screenX = 0;
         myWindow.screenY = 0;
         myWindow.document.write(data);
         myWindow.focus();
-
-
-
-   
-
-             
+       
     };
  </script>
