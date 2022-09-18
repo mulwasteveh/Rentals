@@ -17,7 +17,7 @@
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">Bungoma County</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -45,7 +45,7 @@
 						echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 					}
 				?>
-				<h2>List Of Usres</h2>
+				<h2>List Of Users</h2>
 				<div class="table-responsive">
 					<table class="table table-bordered">
 					  <thead>

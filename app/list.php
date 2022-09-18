@@ -45,7 +45,7 @@
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#212529;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">Bungoma County</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -76,7 +76,7 @@
 					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 				}
 			?>
-			<h2>List of Apartment Details</h2>
+			<h2>List of Room Details</h2>
 				<?php 
 					foreach ($data as $key => $value) {						
 						echo '<div class="card card-inverse card-info mb-3" style="padding:1%;">					
@@ -101,10 +101,10 @@
 											<div class="col-5">
 											<h4 class="text-center">Room Details</h4>';
 												// echo '<p><b>Country: </b>'.$value['country'].'<b> State: </b>'.$value['state'].'<b> City: </b>'.$value['city'].'</p>';
-												echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
+												//echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
 
 												if(isset($value['sale'])){
-													echo '<p><b>Sale: </b>'.$value['sale'].'</p>';
+													echo '<p><b>Rent: </b>'.$value['sale'].'</p>';
 												}										
 												
 													if(isset($value['apartment_name']))

@@ -276,10 +276,10 @@ echo "<script>alert(Successfuly);</script>";
                             <div class="col-5">
                             <h4 class="text-center">Room Details</h4>';
                               // echo '<p><b>Country: </b>'.$value['country'].'<b> State: </b>'.$value['state'].'<b> City: </b>'.$value['city'].'</p>';
-                              echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
+                              //echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
 
                               if(isset($value['sale'])){
-                                echo '<p><b>Sale: </b>'.$value['sale'].'</p>';
+                                echo '<p><b>Rent: </b>'.$value['sale'].'</p>';
                               } 
                               
                                 if(isset($value['apartment_name']))                         
