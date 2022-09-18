@@ -278,13 +278,9 @@ echo "<script>alert(Successfuly);</script>";
                               // echo '<p><b>Country: </b>'.$value['country'].'<b> State: </b>'.$value['state'].'<b> City: </b>'.$value['city'].'</p>';
                               //echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
 
-<<<<<<< HEAD
-                              if(isset($value['sale'])){
-                                echo '<p><b>Rent: </b>'.$value['sale'].'</p>';
-=======
                               if(isset($value['rent'])){
                                 echo '<p><b>Rent: </b>'.$value['rent'].'</p>';
->>>>>>> 645dc0c7d9d506271b1301c6873bc4d7feb9f4b1
+
                               } 
                               
                                 if(isset($value['apartment_name']))                         
