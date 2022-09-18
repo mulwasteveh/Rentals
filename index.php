@@ -278,8 +278,8 @@ echo "<script>alert(Successfuly);</script>";
                               // echo '<p><b>Country: </b>'.$value['country'].'<b> State: </b>'.$value['state'].'<b> City: </b>'.$value['city'].'</p>';
                               echo '<p><b>Plot Number: </b>'.$value['plot_number'].'</p>';
 
-                              if(isset($value['sale'])){
-                                echo '<p><b>Sale: </b>'.$value['sale'].'</p>';
+                              if(isset($value['rent'])){
+                                echo '<p><b>Rent: </b>'.$value['rent'].'</p>';
                               } 
                               
                                 if(isset($value['apartment_name']))                         
@@ -308,7 +308,7 @@ echo "<script>alert(Successfuly);</script>";
             
                <label>PAY FOR SERVICES HERE</label>
                <br>
-               <input class="input2" type="number" name="amount" value="1" style="margin-top: 60px;">
+               <input class="input2" type="number" name="amount" value="'.$value['rent'].'" style="margin-top: 60px;">
                <br><br>
                <input type="number" type="number" name="phone_number" placeholder="enter Phone number">
                <br><br>

@@ -26,7 +26,7 @@
 
             <li class="nav-item">
               <?php if($_SESSION['role'] == 'admin'){ 
-                echo '<a href="../app/sms.php" class="nav-link">Send SMS</a>';
+                echo '<a href="../app/sms.php" class="nav-link">Reports</a>';
               } ?>
             </li>
 
