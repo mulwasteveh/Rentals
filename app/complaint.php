@@ -60,7 +60,7 @@
 					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 				}
 			?>
-			<h2>Complaints</h2>
+			<h2>Complaints</h2> <button style="background: dodgerblue; margin: 4px; outline: none; border-radius: 5px; padding-right: 8px; padding-left: 8px;">Print</button>
 				<form action="" method="post">
 			  		<div class="row">
 				  	    <div class="col-6">
@@ -84,5 +84,18 @@
 			</div>
 		</div>
 	</div>	
+	<script type="text/javascript">
+ function printPage(){
+        var tableData = '<table border="1">'+document.getElementsByTagName('table')[0].innerHTML+'</table>';
+        var data = '<button onclick="window.print()">Print this page</button>'+tableData;       
+        myWindow=window.open('','','width=800,height=600');
+        myWindow.innerWidth = screen.width;
+        myWindow.innerHeight = screen.height;
+        myWindow.screenX = 0;
+        myWindow.screenY = 0;
+        myWindow.document.write(data);
+        myWindow.focus();
+    };
+ </script>
 </section>
 <?php include '../include/footer.php';?>
