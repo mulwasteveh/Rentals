@@ -39,7 +39,7 @@ CREATE TABLE `cmps` (
 --
 
 INSERT INTO `cmps` (`id`, `name`, `cmp`, `username`, `fullname`) VALUES
-(1, 'f', 'f', 'admin', 'Mahantesh Kumbar');
+(1, 'f', 'f', 'admin', 'Steve');
 
 -- --------------------------------------------------------
 

@@ -136,7 +136,7 @@
 						    <tr>
 						      <!-- <th><input type="checkbox" name="" id="selectAll"></th> -->
 						      <th>Full Name</th>
-						      <th>Moblie</th>
+						      <th>Mobile</th>
 						      <th>Country</th>
 						      <th>State</th>
 						      <th>City</th>
